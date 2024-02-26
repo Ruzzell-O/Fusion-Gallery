@@ -3,14 +3,13 @@
 
 body{
     font-family: 'Poppins',sans-serif;
-    background-color: #F4F3F2;
     margin:0;
     padding:0;
     box-sizing: border-box;
+    background-image:url('brushes.jpg');
 }
 
 header{
-    background: linear-gradient(180deg, rgba(9,24,65,1) 0%, rgba(0,54,77,1) 67%);
     color:white;
     margin:0;
     border:0;
@@ -18,10 +17,17 @@ header{
     font-family:"Bebas Neue", sans-serif;
     font-size:20px;
     display:flex;
+
 }
 
 header h1{
     margin-left:30px;
+}
+
+.description{
+    color:#eee;
+    margin-left:30px;
+    font-size:25px;
 }
 
 .popup{
@@ -57,7 +63,7 @@ header h1{
     position:absolute;
     top:50%;
     left:50%;
-    transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%) scale(0);
     background:#F4F3F2;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.19);
     color:#333333;
@@ -66,21 +72,34 @@ header h1{
     border-radius: 5px;
     padding:30px;
     font-size:15px;
+    transition:0.5s ease-in-out;
 }
+
+.login.active-popup{
+    transform:translate(-50%,-50%) scale(1);
+
+}
+
 
 .login .closebtn{
     position:absolute;
     top:17px;
     right:20px;
-    font-size:15px;
+    font-size:20px;
     cursor:pointer;
-    width:15px;
-    height:15px;
+    width:20px;
+    height:20px;
     background:#888;
     color:#eee;
     text-align: center;
-    line-height:16.5px;
+    line-height:20px;
     border-radius:15px;
+}
+
+.login .closebtn:hover{
+    background:#636363;
+    color:#eee;
+
 }
 
 label{
