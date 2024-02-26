@@ -1,47 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body{
     font-family: 'Poppins',sans-serif;
-    background: linear-gradient(180deg, rgba(9,24,65,1) 0%, rgba(0,54,77,1) 67%);
-    background-attachment:fixed;
+    background-color: #F4F3F2;
     margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
 header{
+    background: linear-gradient(180deg, rgba(9,24,65,1) 0%, rgba(0,54,77,1) 67%);
     color:white;
     margin:0;
     border:0;
     padding:10px;
-    margin:0 30px;
+    font-family:"Bebas Neue", sans-serif;
+    font-size:20px;
+    display:flex;
+}
+
+header h1{
+    margin-left:30px;
+}
+
+.popup{
+    position:absolute;
+    top:35px;
+    right:30px;
+}
+
+.loginPopup, .signupPopup{
+    font-size:15px;
+    width: 130px;
+    height:50px;
+    padding:5px;
+    text-align: center;
+    justify-content: center;
+    margin-right:20px;
+    font-family:'Poppins',sans-serif;
+    border-radius:50px;
+    border:none;
+    background-color: #F4F3F2;
+    color:#333333;
+    cursor:pointer;
 }
 
 #loginText{
     margin:30px 0;
     text-align: center;
-    font-size:30px;
+    font-size:40px;
+    font-family:"Bebas Neue", sans-serif;
 }
 
-#wrapper{
-    justify-content: center;
-    align-items:center;
-    margin:auto;
+.login{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
     background:#F4F3F2;
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.19);
     color:#333333;
     width:20%;
-    height:42vh;
+    height:44vh;
     border-radius: 5px;
     padding:30px;
     font-size:15px;
-    transform:translateY(30%);
+}
+
+.login .closebtn{
+    position:absolute;
+    top:17px;
+    right:20px;
+    font-size:15px;
+    cursor:pointer;
+    width:15px;
+    height:15px;
+    background:#888;
+    color:#eee;
+    text-align: center;
+    line-height:16.5px;
+    border-radius:15px;
+}
+
+label{
+    color:#575757;
 }
 
 input{
     width:100%;
-    padding:5px 0;
+    padding:12px 0;
     background:transparent;
     border:none;
     border-bottom:1px solid rgb(199, 199, 199);
+    color:#333333;
+    margin-bottom:5px;
+    font-family: 'Poppins',sans-serif;
 }
 
 input:focus{
@@ -54,7 +108,7 @@ input:focus{
     text-align:center;
     padding:10px;
 }
-button{
+#loginBtn button{
     width:101%;
     font-family:'Poppins',sans-serif;
     padding:12px 0;
@@ -67,18 +121,19 @@ button{
 
 .input{
     padding:10px;
+    font-size:14px;
 }
 
-#signup{
-    color:#333333;
+#signupLink{
+    color:rgba(0,54,77,1);
     font-size:13px;
 }
 
-#signupPage{
+#signup{
     display:flex;
     margin:auto;
     text-align: center;
     justify-content: center;
-    padding:10px;
+    padding:10px 0;
 }
 

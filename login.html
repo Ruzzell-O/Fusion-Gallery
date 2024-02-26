@@ -10,11 +10,16 @@
 <body>
     <header>
         <h1>Fusion Emporium</h1>
+        <div class="popup">
+            <button class="loginPopup" type="button"><b>Login</b></button>
+            <button  class="signupPopup" type="button"><b>Sign Up</b></button>
+        </div>
     </header>
 
-    <div id="wrapper">
+
+    <div class="login">
+        <div class="closebtn">&times;</div>
         <form>
-        <div id="content">
             <h1 id="loginText">LOGIN</h1>
 
             <div id="email-input" class="input">
@@ -31,11 +36,9 @@
                 <button type="button">Login</button>
             </div>
             
-            <div id="signupPage">
-                <p>Don't have an account? <a id="signup" href="#">Sign Up.</a></p>
+            <div id="signup">
+                <p>Don't have an account? <a id="signupLink" href="#">Sign Up.</a></p>
             </div>
-        
-        </div>
         </form>
     </div>
 </body>
