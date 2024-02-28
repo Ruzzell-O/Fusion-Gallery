@@ -9,6 +9,7 @@ body{
     background-image:url('brushes.jpg');
 }
 
+
 header{
     color:white;
     margin:0;
@@ -26,14 +27,21 @@ header h1{
 
 .description{
     color:#eee;
-    margin-left:30px;
-    font-size:25px;
+    margin-top:85px;
+    margin-left:45px;
+    font-size:28px;
 }
 
-.popup{
+.loginShow{
     position:absolute;
     top:35px;
     right:30px;
+}
+
+.signupShow{
+    position:absolute;
+    margin-left:45px;
+    display:flex;
 }
 
 .loginPopup, .signupPopup{
@@ -51,6 +59,22 @@ header h1{
     color:#333333;
     cursor:pointer;
 }
+
+.loginPopup:hover{
+    background-color: #cfcfcf;
+    color:#333333;
+    cursor:pointer;
+    transition:0.5s ease;
+}
+
+.signupPopup:hover{
+    background-color: #cfcfcf;
+    color:#333333;
+    cursor:pointer;
+    transition:0.5s ease;
+}
+
+
 
 #loginText{
     margin:30px 0;
@@ -72,7 +96,7 @@ header h1{
     border-radius: 5px;
     padding:30px;
     font-size:15px;
-    transition:0.5s ease-in-out;
+
 }
 
 .login.active-popup{
@@ -156,3 +180,56 @@ input:focus{
     padding:10px 0;
 }
 
+.signupform{
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#F4F3F2;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.19);
+    color:#333333;
+    width:20%;
+    height:49vh;
+    border-radius: 5px;
+    padding:30px;
+    font-size:15px;
+}
+
+.signupform .closebtnSignup{
+    position:absolute;
+    top:17px;
+    right:20px;
+    font-size:20px;
+    cursor:pointer;
+    width:20px;
+    height:20px;
+    background:#888;
+    color:#eee;
+    text-align: center;
+    line-height:20px;
+    border-radius:15px;
+}
+
+#signupText{
+    margin:30px 0;
+    text-align: center;
+    font-size:40px;
+    font-family:"Bebas Neue", sans-serif;
+}
+
+#signupBtn button{
+    width:101%;
+    font-family:'Poppins',sans-serif;
+    padding:12px 0;
+    border-radius:10px;
+    border:none;
+    background: linear-gradient(180deg, rgba(9,24,65,1) 0%, rgba(0,54,77,1) 51%);
+    color:white;
+    cursor:pointer;
+    margin-top:5%;
+}
+
+.signupform.active-popup{
+    transform:translate(-50%,-50%) scale(1);
+
+}

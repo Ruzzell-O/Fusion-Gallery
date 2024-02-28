@@ -9,16 +9,19 @@
 <body>
     <header>
         <h1>Fusion Emporium</h1>
-        <div class="popup">
+        <div class="loginShow">
             <button class="loginPopup" id="show-login" type="button"><b>Login</b></button>
-            <button  class="signupPopup" id="show-signup" type="button"><b>Sign Up</b></button>
         </div>
     </header>
 
     <div class="description">
-        <h1><i>Share. Create. Grow.</i></h1>
-        <p> Fusion Emporium is a platform for ardent artists <br> to showcase and sell their works. </p>
+        <h1>Share. Create. Grow.</h1>
+        <p> Fusion Emporium is a platform for ardent artists <br> to showcase and sell their works. Set sail on a <br> creative endeavor!</p>
     </div>
+    <div class="signupShow">
+        <button  class="signupPopup" id="show-signup" type="button"><b>Sign Up</b></button>
+    </div>
+
 
     <div class="login">
         <div class="closebtn">&times;</div>
@@ -42,6 +45,33 @@
             <div id="signup">
                 <p>Don't have an account? <a id="signupLink" href="#">Sign Up.</a></p>
             </div>
+        </form>
+    </div>
+
+    <div class="signupform">
+        <div class="closebtnSignup">&times;</div>
+        <form>
+            <h1 id="signupText">Sign Up</h1>
+
+            <div id="email-input" class="input">
+                <label for="email">Email address</label><br>
+                <input type="text" id="email" name="email">
+            </div>
+
+            <div id="username-input" class="input">
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username">
+            </div>
+            
+            <div id="password-input" class="input">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div id="signupBtn">
+                <button type="button">Sign up</button>
+            </div>
+            
         </form>
     </div>
 
